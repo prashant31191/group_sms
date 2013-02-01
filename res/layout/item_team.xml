@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/jiantou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:id="@+id/teamname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/item_team_margin"
+        android:layout_toRightOf="@id/jiantou"
+        android:textColor="#000000"
+        android:textSize="@dimen/item_teamname_size" />
+
+    <CheckBox
+        android:id="@+id/team_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/checked_button"
+        android:button="@null"
+        android:clickable="false"
+        android:focusable="false"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/team_select"
+        android:background="@drawable/config_btn"
+        android:clickable="true"
+        android:onClick="editthis" />
+
+    <Button
+        android:id="@+id/newgroup"
+        android:layout_width="120dp"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape_corner_button"
+        android:clickable="true"
+        android:onClick="newgroup"
+        android:text="@string/addTeam"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+</RelativeLayout>

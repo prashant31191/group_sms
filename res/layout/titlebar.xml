@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout_Item"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/title_height"
+    android:background="@drawable/title_bj"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="1dip" >
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="@dimen/button_height"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/title_return_normal"
+        android:focusable="true"
+        android:state_pressed="false"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/menu_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="@string/pick_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fst_team_name_size" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="32dip"
+        android:layout_alignParentRight="true"
+        android:focusable="true"
+        android:state_pressed="true"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+</RelativeLayout>

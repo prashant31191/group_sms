@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <CheckBox
+        android:id="@+id/contactitem_select_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/contactitem_title"
+        android:layout_marginLeft="10dip"
+        android:background="@drawable/checked_button"
+        android:button="@null"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="@dimen/contact_name_length" 
+        android:singleLine="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contactitem_title"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/contactitem_select_cb"
+        android:textColor="@color/black"
+        android:textSize="@dimen/contact_name_size" />
+
+    <TextView
+        android:id="@+id/item_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contactitem_title"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/item_name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/contact_name_size" />
+
+    <LinearLayout
+        android:id="@id/contactitem_title"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/group_options_background"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View
+            android:id="@+id/obj1"
+            style="@style/line" />
+
+        <TextView
+            android:id="@+id/contactitem_catalog"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/menu_size"
+            android:textColor="@color/black" />
+
+        <View
+            android:id="@+id/obj4"
+            style="@style/line" />
+    </LinearLayout>
+
+</RelativeLayout>

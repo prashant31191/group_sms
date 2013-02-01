@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="msg_date_size">15dp</dimen>
+    <dimen name="msg_body_size">15dp</dimen>
+    <dimen name="msg_username_size">17dp</dimen>
+    <dimen name="msg_count_size">17dp</dimen>
+    <dimen name="msg_noreadcount_size">15dp</dimen>
+    <dimen name="sender_name_size">18dp</dimen>
+    <dimen name="sender_type_size">14dp</dimen>
+    <dimen name="contact_phone_size">16dp</dimen>
+    <dimen name="menu_size">16dp</dimen>
+    <dimen name="contact_name_size">19dp</dimen>
+    <dimen name="item_teamname_size">19dp</dimen>
+    <dimen name="item_team_margin">30dp</dimen>
+    <dimen name="item_sender_margin">20dp</dimen>
+    <dimen name="button_height">40dp</dimen>
+    <dimen name="title_height">42dp</dimen>
+    <dimen name="fst_team_name_size">22dp</dimen>
+    <dimen name="gridview_height">250dp</dimen>
+    <dimen name="contact_name_length">90dp</dimen>
+    <dimen name="fst_name_size">20dp</dimen>
+    <dimen name="fst_count_size">17dp</dimen>
+    <dimen name="choose_none_size">20dp</dimen>
+
+    <integer name="sidebar_fontsize">10</integer>
+    <integer name="sidebar_itemheight">12</integer>
+
+    <color name="transparent">#9000</color>
+    <color name="orange">#FF7818</color>
+    <color name="titleColor">#B7130B</color>
+    <color name="gray">#373737</color>
+    <color name="menu">#0199FF</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="buttoncolor">#50809C</color>
+    <color name="menucolor">#50809C</color>
+    <color name="danlan">#A9C6EC</color>
+
+</resources>

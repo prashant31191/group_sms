@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:minHeight="40px"
+    android:orientation="horizontal" >
+
+    <CheckBox
+        android:id="@+id/phone_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35px"
+        android:checked="false"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/phone_name"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="10px"
+        android:textColor="?android:attr/textColorPrimary" />
+
+</LinearLayout>

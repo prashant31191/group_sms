@@ -1,0 +1,108 @@
+#
+# An unexpected error has been detected by HotSpot Virtual Machine:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x6d7317cb, pid=7820, tid=3488
+#
+# Java VM: Java HotSpot(TM) Client VM (1.5.0_02-b09 mixed mode)
+# Problematic frame:
+# V  [jvm.dll+0x817cb]
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x003c7c58):  JavaThread  [_thread_in_vm, id=3488]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0x00000000
+
+Registers:
+EAX=0x0006fa44, EBX=0x008b16b0, ECX=0x003c7c58, EDX=0x0006fa60
+ESP=0x0006f988, EBP=0x0006f9dc, ESI=0x003c7c58, EDI=0x00000000
+EIP=0x6d7317cb, EFLAGS=0x00010202
+
+Top of Stack: (sp=0x0006f988)
+0x0006f988:   00000000 003c7c58 008b16b0 003c6d20
+0x0006f998:   003c7c58 0094af67 0006fa48 6d7a1a23
+0x0006f9a8:   0000013e 0094af67 0000013e 6d77b51d
+0x0006f9b8:   003c6d20 6d7a1a61 0000002a 003c7c58
+0x0006f9c8:   008b168c 00000000 00000050 00000015
+0x0006f9d8:   00000000 0006fa20 6d784989 0006fab8
+0x0006f9e8:   0006fa44 0006fa5c 003c7c58 00000000
+0x0006f9f8:   003c7c58 008b16b0 00000000 003c7c58 
+
+Instructions: (pc=0x6d7317cb)
+0x6d7317bb:   14 c3 55 8b ec 83 ec 48 8b 45 0c 53 56 57 8b 38
+0x6d7317cb:   8b 0f e8 25 73 04 00 85 c0 0f 85 61 01 00 00 57 
+
+
+Stack: [0x00030000,0x00070000),  sp=0x0006f988,  free space=254k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x817cb]
+V  [jvm.dll+0xd4989]
+V  [jvm.dll+0x817b9]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+VM state:not at safepoint (not fully initilizated)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ def new generation   total 576K, used 0K [0x02a30000, 0x02ad0000, 0x02f10000)
+  eden space 512K,   0% used [0x02a30000, 0x02a30000, 0x02ab0000)
+  from space 64K,   0% used [0x02ab0000, 0x02ab0000, 0x02ac0000)
+  to   space 64K,   0% used [0x02ac0000, 0x02ac0000, 0x02ad0000)
+ tenured generation   total 1408K, used 0K [0x02f10000, 0x03070000, 0x06a30000)
+   the space 1408K,   0% used [0x02f10000, 0x02f10000, 0x02f10200, 0x03070000)
+ compacting perm gen  total 8192K, used 54K [0x06a30000, 0x07230000, 0x0aa30000)
+   the space 8192K,   0% used [0x06a30000, 0x06a3dbe0, 0x06a3dc00, 0x07230000)
+No shared spaces configured.
+
+Dynamic libraries:
+0x00400000 - 0x0040c000 	C:\Program Files\Java\jdk1.5.0_02\bin\javaw.exe
+0x7c920000 - 0x7c9b6000 	C:\WINDOWS.0\system32\ntdll.dll
+0x7c800000 - 0x7c91e000 	C:\WINDOWS.0\system32\kernel32.dll
+0x77da0000 - 0x77e49000 	C:\WINDOWS.0\system32\ADVAPI32.dll
+0x77e50000 - 0x77ee3000 	C:\WINDOWS.0\system32\RPCRT4.dll
+0x77fc0000 - 0x77fd1000 	C:\WINDOWS.0\system32\Secur32.dll
+0x77d10000 - 0x77da0000 	C:\WINDOWS.0\system32\USER32.dll
+0x77ef0000 - 0x77f39000 	C:\WINDOWS.0\system32\GDI32.dll
+0x77be0000 - 0x77c38000 	C:\WINDOWS.0\system32\MSVCRT.dll
+0x76300000 - 0x7631d000 	C:\WINDOWS.0\system32\IMM32.DLL
+0x62c20000 - 0x62c29000 	C:\WINDOWS.0\system32\LPK.DLL
+0x73fa0000 - 0x7400b000 	C:\WINDOWS.0\system32\USP10.dll
+0x6d6b0000 - 0x6d835000 	C:\Program Files\Java\jdk1.5.0_02\jre\bin\client\jvm.dll
+0x76b10000 - 0x76b3a000 	C:\WINDOWS.0\system32\WINMM.dll
+0x6d2f0000 - 0x6d2f8000 	C:\Program Files\Java\jdk1.5.0_02\jre\bin\hpi.dll
+0x76bc0000 - 0x76bcb000 	C:\WINDOWS.0\system32\PSAPI.DLL
+0x6d680000 - 0x6d68c000 	C:\Program Files\Java\jdk1.5.0_02\jre\bin\verify.dll
+0x6d370000 - 0x6d38d000 	C:\Program Files\Java\jdk1.5.0_02\jre\bin\java.dll
+0x6d6a0000 - 0x6d6af000 	C:\Program Files\Java\jdk1.5.0_02\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 -Xbootclasspath:E:\Android\sdk\android-sdk-windows\platforms\android-9\android.jar
+java_command: com.example.android.base.PingYinUtil
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.6.0_10
+CLASSPATH=D:\Èí¼þ\10ÄêÏÂÔØ\db-derby-10.5.3.0-bin(1)\db-derby-10.5.3.0-bin\lib;E:\hvming\apache-maven-3.0.3\bin;ATALINA_HOME\common\lib\servlet-api.jar;
+PATH=C:/Program Files/Java/jdk1.6.0_10/bin/../jre/bin/client;C:/Program Files/Java/jdk1.6.0_10/bin/../jre/bin;C:/Program Files/Java/jdk1.6.0_10/bin/../jre/lib/i386;C:\Program Files\Java\jdk1.6.0_10\bin;d:\oracle\ora92\bin;C:\Program Files\Oracle\jre\1.3.1\bin;C:\Program Files\Oracle\jre\1.1.8\bin;C:\WINDOWS.0\system32;C:\WINDOWS.0;C:\WINDOWS.0\System32\Wbem;C:\Program Files\Common Files\Thunder Network\KanKan\Codecs;C:\Program Files\Microsoft SQL Server\90\Tools\binn\;C:\WINDOWS.0\system32\WindowsPowerShell\v1.0;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Groovy\Groovy-1.8.6\bin;E:\hvming\apache-maven-3.0.3\bin;ATALINA_HOME\bin;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;E:\hvming\apache-cxf-2.4.1\bin;C:\Program Files\Microsoft SQL Server\80\Tools\Binn\;C:\Program Files\Microsoft SQL Server\90\DTS\Binn\;.;E:\Android\sdk\android-sdk-windows\platform-tools;E:\Android\sdk\android-sdk-windows\tools;C:\Program Files\GAE;C:\Python25;C:\Program Files\StormII\Codec;C:\Program Files\StormII\;C:\Program Files\IDM Computer Solutions\UltraEdit\;D:\gogo\;h:\auto\;D:\apache-ant-1.8.3\bin;E:\Android\sdk\android-sdk-windows\tools;;E:\Android\eclipse-jee-juno-win32\eclipse;
+USERNAME=lsq
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 23 Stepping 10, GenuineIntel
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows XP Build 2600 Service Pack 3
+
+CPU:total 2 family 6, cmov, cx8, fxsr, mmx, sse, sse2, ht
+
+Memory: 4k page, physical 2061544k(290056k free), swap 3998364k(1952728k free)
+
+vm_info: Java HotSpot(TM) Client VM (1.5.0_02-b09) for windows-x86, built on Mar  4 2005 01:53:53 by "java_re" with MS VC++ 6.0
+

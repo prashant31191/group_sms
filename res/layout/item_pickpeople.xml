@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <Button
+        android:id="@+id/people"
+        android:layout_width="@dimen/contact_name_length"
+        android:layout_height="@dimen/button_height"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="3dp"
+        android:background="@drawable/group_options_background"
+        android:clickable="false"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/deleteThis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/delete"
+        android:clickable="true"
+        android:onClick="deleteThis" />
+
+</RelativeLayout>

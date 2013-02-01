@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_Item"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/title_bj"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="1dip" >
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="@dimen/title_height"
+            android:layout_height="@dimen/title_height"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/title_return_normal"
+            android:focusable="true"
+            android:state_pressed="false"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/menu_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/send_confirm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fst_team_name_size" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="32dip"
+            android:layout_alignParentRight="true"
+            android:focusable="true"
+            android:state_pressed="true"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" 
+        android:cacheColorHint="#00000000"
+        android:orientation="horizontal"
+        android:padding="3dip" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="1dp"
+            android:background="@drawable/shape"
+            android:orientation="horizontal"
+            android:padding="1dip" >
+
+            <GridView
+                android:id="@+id/sendPeople"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:gravity="center|center_vertical"
+                android:numColumns="3"
+                android:padding="1dip" >
+            </GridView>
+
+            <TextView
+                android:id="@+id/sendPeopleNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/sendPeople"
+                android:textColor="#000000"
+                android:textSize="16sp" >
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="1dp" 
+        android:background="@drawable/shape"
+        android:orientation="horizontal"
+        android:padding="3dip" >
+
+        <ScrollView
+            android:id="@+id/messageContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:cacheColorHint="#00000000"
+            android:orientation="horizontal"
+            android:padding="1dip" >
+
+            <TextView
+                android:id="@+id/sendMessage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|top"
+                android:textColor="#000000"
+                android:textSize="16sp" >
+            </TextView>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/messageNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/messageContent"
+            android:textColor="#000000"
+            android:textSize="16sp" >
+        </TextView>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/confirm_sure"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/shape_corner_button"
+        android:text="@string/confirm_sened"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/confirm_cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_corner_button"
+        android:text="@string/confirm_cancel"
+        android:textColor="@color/white" />
+
+</LinearLayout>

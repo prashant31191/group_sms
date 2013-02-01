@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_gravity="top"
+        android:background="@drawable/title_bj"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="1dip" >
+
+        <TextView
+            android:id="@+id/menu_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/send_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fst_team_name_size" />
+
+        <Button
+            android:id="@+id/addContat"
+            android:layout_width="@dimen/button_height"
+            android:layout_height="@dimen/button_height"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/add_contact_btn" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_corner_gridview"
+            android:cacheColorHint="#00000000"
+            android:padding="2dip" >
+
+            <TextView
+                android:id="@+id/choseNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="left"
+                android:text="@string/choose_no_one"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/choose_none_size" />
+
+            <GridView
+                android:id="@+id/sendPeople"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/gridview_height"
+                android:layout_below="@id/choseNo"
+                android:layout_margin="3dp"
+                android:gravity="center|center_vertical"
+                android:numColumns="3"
+                android:padding="5dip" >
+            </GridView>
+
+            <TextView
+                android:id="@+id/peopleCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/sendPeople"
+                android:layout_marginRight="10dp"
+                android:text="@string/none"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/fst_count_size" />
+
+            <TextView
+                android:id="@+id/peopleCountMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sendPeople"
+                android:layout_marginRight="2dp"
+                android:layout_toLeftOf="@id/peopleCount"
+                android:text="@string/shoujianren"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/fst_count_size" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/orange" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/group_options_background"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/all_team"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="6dp"
+                android:gravity="left"
+                android:text="@string/menu_team"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fst_team_name_size" />
+
+            <TextView
+                android:id="@+id/all_team_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/fst_name_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/orange" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:cacheColorHint="#00000000"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:background="@drawable/shape"
+                android:cacheColorHint="#00000000"
+                android:orientation="horizontal"
+                android:padding="2dip" >
+
+                <ImageView
+                    android:id="@+id/choseNoTeam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/meiyouqunzhu"
+                    android:visibility="gone" >
+                </ImageView>
+
+                <ExpandableListView
+                    android:id="@+id/groupList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="#00000000" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="1dp"
+        android:background="@drawable/shape"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/text_notuse"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <EditText
+            android:id="@+id/inputMess"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/message_tip" >
+        </EditText>
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="40dp"
+            android:layout_height="@dimen/button_height"
+            android:background="@drawable/title_bj"
+            android:text="@string/send"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

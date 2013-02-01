@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Contact_Manager</string>
+    <string name="search_hint">输入字符进行查询</string>
+    <string name="message_hint">输入短信内容</string>
+    <string name="makeSure">确定</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="dialog_title">信息提示</string>
+    <string name="input_team_name">必须输入分组名称</string>
+    <string name="con_ok">确定</string>
+    <string name="menu_all">全部联系人</string>
+    <string name="menu_team">群组</string>
+    <string name="menu_history">最近联系</string>
+    <string name="contact">+联系人</string>
+    <string name="addTeam">新建分组</string>
+    <string name="inputTeamName">请输入组名</string>
+    <string name="send">发送</string>
+    <string name="more">更多</string>
+    <string name="message">短消息</string>
+    <string name="multi_send">群发</string>
+    <string name="send_title">新通知</string>
+    <string name="send_confirm">通知确认</string>     <string name="search_hint2">人太多?输入名字搜搜~</string>
+    <string name="input_hint">输入收件人姓名或号码</string>
+    <string name="confirm_sened">没问题，发送</string>
+    <string name="confirm_cancel">再修改一下</string>
+    <string name="team_title">新建群</string>
+    <string name="shoujianren">收件人</string>
+    <string name="none">(0)</string>
+    <string name="pick_title">请选择被通知人</string>
+    <string name="message_tip">写了通知别忘复核哦~</string>
+    <string name="choose_no_one">您还没有选择任何被通知人</string>
+
+</resources>

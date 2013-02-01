@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="sidebar_fontsize">19</integer>
+    <integer name="sidebar_itemheight">21</integer>
+
+</resources>

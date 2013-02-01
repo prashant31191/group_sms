@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="@dimen/contact_name_length"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/item_team_margin"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/contact_name_size" />
+
+    <TextView
+        android:id="@+id/item_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/item_name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/contact_name_size" />
+
+    <CheckBox
+        android:id="@+id/contactitem_select_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/checked_button"
+        android:button="@null"
+        android:clickable="false"
+        android:focusable="false"
+        android:visibility="visible" />
+
+</RelativeLayout>

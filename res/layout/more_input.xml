@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sidebar="http://schemas.android.com/apk/res/com.example.android.contactmanager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/tips"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center_horizontal" 
+            android:background="#E2E2E2"
+            android:textColor="@color/black"
+            android:textSize="10sp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/inputEdit"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/tips"
+            android:gravity="left|top"
+            android:inputType="textMultiLine" >
+        </EditText>
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/inputEdit"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputEdit"
+            android:layout_centerHorizontal="true"
+            android:text="@string/send" />
+
+        <Button
+            android:id="@+id/sure"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/inputEdit"
+            android:text="@string/makeSure" />
+    </RelativeLayout>
+
+</LinearLayout>
